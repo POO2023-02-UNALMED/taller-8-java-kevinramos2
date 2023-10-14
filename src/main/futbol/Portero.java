@@ -1,3 +1,4 @@
+package futbol;
 public class Portero extends Futbolista {
   //atributos
   public short golesRecibidos;
@@ -23,6 +24,11 @@ public class Portero extends Futbolista {
   }
 
   //metodo interfaz comparable
-  
+  @Override
+  public int compareTo(Object other){
+    var otroPortero = (Portero) other;
+    return otroPortero.getGolerRecibidos()-golesRecibidos;
+  }
+
   
 }
