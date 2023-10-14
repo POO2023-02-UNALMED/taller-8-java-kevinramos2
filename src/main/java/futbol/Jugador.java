@@ -22,10 +22,8 @@ public class Jugador extends Futbolista{
 	
 	
 	//metodo de interfaz CompareTo
-	@Override
-	public int compareTo(Futbolista o) {
-		 var otroJugador = (Jugador) o;
-		    return super.getEdad();
+	public int compareTo(Object f) {
+		return Math.abs(this.getEdad() - ((Futbolista)f).getEdad());
 	}
 
 	@Override
@@ -34,9 +32,22 @@ public class Jugador extends Futbolista{
 	}
 	
 	//toString
-	  @Override
-	  public String toString(){
-	    return super.toString() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
-	  }
-
+	@Override
+	public String toString(){
+	   return super.toString() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
+	}
+	  
+	//gets y sets
+	public short getGolesMarcados() {
+		return this.golesMarcados;
+	}
+	public void setGolesMarcados(short golesMarcados) {
+		this.golesMarcados = golesMarcados;
+	}
+	public byte getDorsal() {
+		return this.dorsal;
+	}
+	public void setDorsal(byte dorsal) {
+		this.dorsal = dorsal;
+	}
 }
