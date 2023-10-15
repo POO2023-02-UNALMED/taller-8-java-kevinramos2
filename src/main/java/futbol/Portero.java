@@ -8,14 +8,14 @@ public class Portero extends Futbolista {
 	//constructor
 	public Portero(String nombre,int edad, short golesRecibidos, byte dorsal) {
 		super(nombre,edad,"portero");
-		this.dorsal = dorsal;
 		this.golesRecibidos = golesRecibidos;
+		this.dorsal = dorsal;
 	}
 	
 	//toString
 	@Override
 	public String toString(){
-	   return super.toString() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
+	   return super.toString() + " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
 	}
 	
 	//metodo interfaz
