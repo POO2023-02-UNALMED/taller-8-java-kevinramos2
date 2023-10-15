@@ -7,7 +7,7 @@ public class Jugador extends Futbolista{
 	
 	//constructor
 	public Jugador(String nombre, String posicion, int edad, short golesMarcado, byte dorsal) {
-		super(nombre,posicion,edad);
+		super(nombre,edad,posicion);
 		this.golesMarcados = golesMarcados;
 		this.dorsal = dorsal;
 	}
