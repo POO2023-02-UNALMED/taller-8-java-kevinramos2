@@ -15,7 +15,7 @@ public class Portero extends Futbolista {
 	//toString
 	@Override
 	public String toString(){
-	   return super.toString() + " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
+	   return super.toString() + " con el dorsal " + this.dorsal + ".Le han marcado " + this.golesRecibidos;
 	}
 	
 	//metodo interfaz
